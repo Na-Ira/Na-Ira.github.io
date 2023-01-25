@@ -9,4 +9,4 @@
 - Icons Bootstrap,
 - Figma, Photoshop
 
-#### Portfolio https://na-ira.github.io.git/
+#### Portfolio https://na-ira.github.io/
