@@ -2,12 +2,12 @@
 *.code-workspace
 logs/
 
-#scss
-scss/*
+#ignor all scss
+*.scss
 
-#scss
-src/*
+#src
+/src/*
 
 #font
-font/*
+/font/*
 
