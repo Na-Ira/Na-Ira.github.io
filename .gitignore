@@ -1,8 +1,13 @@
 #workspace
 *.code-workspace
+logs/
 
 #scss
-/scss/*
+scss/*
 
 #scss
-/src/*
+src/*
+
+#font
+font/*
+
