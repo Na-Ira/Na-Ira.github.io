@@ -1,2 +1,11 @@
 # workspace
 *.code-workspace
+
+# scss
+scss/
+
+# src
+src/**/
+
+# font
+font/
