@@ -1,0 +1,8 @@
+#workspace
+*.code-workspace
+
+#scss
+/scss/*
+
+#scss
+/src/*
