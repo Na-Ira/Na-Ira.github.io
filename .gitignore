@@ -5,7 +5,7 @@
 scss/
 
 # src
-src/**/
+src/
 
 # font
 font/
