@@ -95,6 +95,11 @@ body {
   visibility: visible;
   opacity: 1; }
 
+.navigation-listmobile li {
+  border-bottom: 0.067rem solid rgba(255, 255, 255, 0.1); }
+  .navigation-listmobile li a {
+    padding: 0.5rem 1.5rem; }
+
 .wrap-logo {
   display: -webkit-box;
   display: -ms-flexbox;
