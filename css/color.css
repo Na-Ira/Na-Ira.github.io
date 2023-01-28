@@ -8,14 +8,24 @@ Filename      : color.css
 */
 
 :root {
+  /* General */
   --colorgradientone: #ff5a00;
   --colorviolet: #940cd8;
   --baseone: #ffffff;
   --basetwo: #ff1c3b;
-  --basetree: #141c18;
   --transone: rgba(255, 255, 255, 0.5);
+  --opacity-5: 0.5;
+
+  /* Purple theme */
+  --bg-purple: #2d0444;
+  --bg-purple-dark: #180026;
+  --purple-text: #d0daf0;
+  --bg-purple-two: #9d9dc2;
+  --bg-purple-three: #4b1968;
+
+  /* Dark theme */
   --body: #0a0e0c;
   --dark-grey: #212529;
   --dark-grey-two: #3e3f42;
-  --opacity-5: 0.5;
+  --basetree: #141c18;
 }

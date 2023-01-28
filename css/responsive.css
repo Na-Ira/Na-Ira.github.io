@@ -82,7 +82,7 @@
   .bars {
     left: 1.333rem;
   }
-  .navigation-nav li {
+  /* .navigation-nav li {
     width: .333rem;
     height: .333rem;
   }
@@ -91,7 +91,7 @@
     height: 1.333rem;
     top: -0.667rem;
     left: -0.667rem;
-  }
+  } */
   .wrap-imgpic {
     width: 16.667rem;
     height: 16.667rem;

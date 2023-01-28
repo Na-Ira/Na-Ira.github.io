@@ -65,6 +65,62 @@ const irynainit = (function () {
     el.classList.remove("show");
   };
 
+  // ========  Dark mode ========================
+  // body class="purple-mode" == dark
+  // body == light
+
+  const btnDarkMode = document.querySelector(".dark-mode-btn");
+
+  /* 1. If the system settings have a dark theme, 
+  make purple-mode the main theme */
+  if (
+    window.matchMedia &&
+    window.matchMedia("(prefers-color-scheme: dark)").matches
+  ) {
+    btnDarkMode.classList.add("dark-mode-btn--active");
+    document.body.classList.add("purple-mode");
+  }
+
+  // 2. Checking the dark theme (purple-mode) in localStorage
+  if (localStorage.getItem("darkMode") === "dark") {
+    btnDarkMode.classList.add("dark-mode-btn--active");
+    document.body.classList.add("purple-mode");
+  } else if (localStorage.getItem("darkMode") === "light") {
+    btnDarkMode.classList.remove("dark-mode-btn--active");
+    document.body.classList.remove("purple-mode");
+  }
+
+  // 3. If the system settings are changed, change the theme
+  window
+    .matchMedia("(prefers-color-scheme: dark)")
+    .addEventListener("change", (event) => {
+      const newColorScheme = event.matches ? "dark" : "light";
+
+      if (newColorScheme === "dark") {
+        btnDarkMode.classList.add("dark-mode-btn--active");
+        document.body.classList.add("purple-mode");
+        localStorage.setItem("darkMode", "dark");
+      } else {
+        btnDarkMode.classList.remove("dark-mode-btn--active");
+        document.body.classList.remove("purple-mode");
+        localStorage.setItem("darkMode", "light");
+      }
+    });
+
+  // 4. Switching on night purple by button
+  btnDarkMode.onclick = function () {
+    btnDarkMode.classList.toggle("dark-mode-btn--active");
+    const isDark = document.body.classList.toggle("purple-mode");
+
+    if (isDark) {
+      localStorage.setItem("darkMode", "dark");
+    } else {
+      localStorage.setItem("darkMode", "light");
+    }
+  };
+
+  // ========  End Dark mode ========================
+
   // click button menu burger
   const buttonclick = function (e) {
     // menu mobile toggle
@@ -140,7 +196,6 @@ const irynainit = (function () {
 
       // Initiate Pure Counter
       new PureCounter();
-
     });
     window.addEventListener("scroll", (e) => {
       if (window.pageYOffset > 10) {
