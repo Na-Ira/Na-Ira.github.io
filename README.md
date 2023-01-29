@@ -4,7 +4,7 @@
 
 - HTML, CSS (SCSS), Bootstrap 5,
 - Vanilla JS, jQuery,
-- Animations lib: AOS.js, Titlt.js, Three.js,
+- Animations lib: AOS.js, Titlt.js, Three.js, Pixi.js
 - Slick slider, Glightbox,
 - Icons Bootstrap,
 - Figma, Photoshop

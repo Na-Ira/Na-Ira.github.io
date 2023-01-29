@@ -22,7 +22,8 @@ body {
 
 * a {
   color: var(--baseone);
-  text-decoration: none; }
+  text-decoration: none;
+  z-index: 1; }
 
 * a:hover {
   color: var(--colorgradientone);
@@ -248,7 +249,7 @@ body {
         background: linear-gradient(120deg, var(--basetwo), var(--colorgradientone));
         position: absolute;
         top: 0.25rem;
-        left: -2.5rem; }
+        left: -2rem; }
   .resume .title-timeline {
     margin-bottom: 1.6rem; }
   .resume .progress-wrap {
@@ -620,6 +621,14 @@ body {
 input,
 textarea {
   background: rgba(255, 255, 255, 0.05); }
+
+#cursor {
+  position: fixed;
+  height: 100vh !important;
+  width: 100vw !important;
+  -ms-touch-action: none;
+      touch-action: none;
+  z-index: 1; }
 
 .purple-mode {
   background-color: var(--bg-purple);
