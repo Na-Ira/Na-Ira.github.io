@@ -628,7 +628,7 @@ textarea {
   width: 100vw !important;
   -ms-touch-action: none;
       touch-action: none;
-  z-index: 1; }
+  z-index: 0; }
 
 .purple-mode {
   background-color: var(--bg-purple);
