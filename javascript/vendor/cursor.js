@@ -16,7 +16,7 @@ const app = new PIXI.Application({
 });
 
 const texture = createTexture(0, 8, app.renderer.resolution);
-const pointer = new PIXI.Point(app.screen.width / 2, app.screen.height / 2);
+const pointer = new PIXI.Point(app.screen.width / 12, app.screen.height / 6);
 const emitterPos = pointer.clone();
 
 const container = new PIXI.particles.ParticleContainer(5000, {

@@ -674,12 +674,11 @@ section {
   text-indent: -999em;
   cursor: pointer;
   position: relative;
-  -webkit-transition: -webkit-transform 0.3s ease, background-color 0.3s ease;
-  -webkit-transition: background-color 0.3s ease, -webkit-transform 0.3s ease;
-  transition: background-color 0.3s ease, -webkit-transform 0.3s ease;
-  -o-transition: transform 0.3s ease, background-color 0.3s ease;
-  transition: transform 0.3s ease, background-color 0.3s ease;
-  transition: transform 0.3s ease, background-color 0.3s ease,
+  -webkit-transition: background-color 0.3s ease, -webkit-transform 0.5s ease;
+  transition: background-color 0.3s ease, -webkit-transform 0.5s ease;
+  -o-transition: transform 0.5s ease, background-color 0.3s ease;
+  transition: transform 0.5s ease, background-color 0.3s ease;
+  transition: transform 0.5s ease, background-color 0.3s ease,
     -webkit-transform 0.3s ease;
 }
 

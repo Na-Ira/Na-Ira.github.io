@@ -27,10 +27,10 @@
 
 @media (max-width: 66.6rem) {
   .o-line:nth-child(1) {
-    opacity: 0;
+    opacity: .1;
   }
   .o-line:nth-child(3) {
-    opacity: 0;
+    opacity: .1;
   }
   .img-load {
     width: 50%;

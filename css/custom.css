@@ -6,6 +6,13 @@ body {
   height: 100%;
   min-height: 100vh; }
 
+section {
+  z-index: 3; }
+
+.button {
+  position: relative;
+  z-index: 2; }
+
 .wrapper {
   min-height: 100%;
   display: -webkit-box;
@@ -18,7 +25,8 @@ body {
   .wrapper main {
     -webkit-box-flex: 1;
         -ms-flex: 1 1 auto;
-            flex: 1 1 auto; }
+            flex: 1 1 auto;
+    z-index: auto; }
 
 * a {
   color: var(--baseone);
@@ -175,7 +183,8 @@ body {
 
 .wrap-imgpic {
   position: relative;
-  overflow: visible; }
+  overflow: visible;
+  z-index: 0; }
   .wrap-imgpic .frame {
     position: absolute;
     border: 0.0625rem solid var(--basetwo);
@@ -293,7 +302,7 @@ body {
         font-size: 1.5rem; }
 
 .container-counter-wrap {
-  padding: 0 2rem; }
+  padding: 0 1.5rem; }
   .container-counter-wrap .counter-wrap {
     max-width: 70rem;
     margin: auto auto 5rem auto;
@@ -574,7 +583,8 @@ body {
     .porto-wrap > .item-porto a img {
       border-radius: 0.5rem;
       -o-object-fit: cover;
-         object-fit: cover; }
+         object-fit: cover;
+      min-height: 16.6667rem; }
   .porto-wrap > .item-porto:hover .porto-description {
     -webkit-transform: scale(1) translateZ(300px) translateY(-50%) translateX(-50%);
             transform: scale(1) translateZ(300px) translateY(-50%) translateX(-50%);
@@ -622,13 +632,17 @@ input,
 textarea {
   background: rgba(255, 255, 255, 0.05); }
 
+.canvas-cursor {
+  position: relative;
+  z-index: auto; }
+
 #cursor {
   position: fixed;
-  height: 100vh !important;
-  width: 100vw !important;
+  display: inline-block;
   -ms-touch-action: none;
       touch-action: none;
-  z-index: 0; }
+  z-index: 1;
+  opacity: 0.99; }
 
 .purple-mode {
   background-color: var(--bg-purple);
@@ -795,7 +809,15 @@ textarea {
   #tools .item.item-props-first .icon-text {
     width: 8rem; } }
 
+@media (max-width: 852px) {
+  .porto-wrap > .item-porto a {
+    width: 100%; }
+    .porto-wrap > .item-porto a img {
+      max-height: 33.3333rem; } }
+
 @media (max-width: 768px) {
+  #cursor {
+    display: none; }
   .big-text {
     font-size: 6rem; }
   .wrap-heroifo h1 {
