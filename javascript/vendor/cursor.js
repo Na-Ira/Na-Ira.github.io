@@ -15,7 +15,7 @@ const app = new PIXI.Application({
   view: document.querySelector("#cursor"),
 });
 
-const texture = createTexture(0, 8, app.renderer.resolution);
+const texture = createTexture(3, 10, app.renderer.resolution);
 const pointer = new PIXI.Point(app.screen.width / 12, app.screen.height / 6);
 const emitterPos = pointer.clone();
 
@@ -122,7 +122,7 @@ function createTexture(r1, r2, resolution) {
 
   const canvas = document.createElement("canvas");
   const context = canvas.getContext("2d");
-  canvas.width = canvas.height = c * 2;
+  canvas.width = canvas.height = c * 5;
 
   const gradient = context.createRadialGradient(c, c, r1, c, c, r2);
   gradient.addColorStop(0, "rgba(255,255,255,1)");

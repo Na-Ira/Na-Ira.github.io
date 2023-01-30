@@ -9,6 +9,10 @@ body {
 section {
   z-index: 3; }
 
+#wrap-header.fixi {
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px); }
+
 .button {
   position: relative;
   z-index: 2; }
@@ -633,16 +637,20 @@ textarea {
   background: rgba(255, 255, 255, 0.05); }
 
 .canvas-cursor {
-  position: relative;
-  z-index: auto; }
+  width: auto;
+  height: auto; }
 
 #cursor {
   position: fixed;
   display: inline-block;
   -ms-touch-action: none;
-      touch-action: none;
-  z-index: 1;
-  opacity: 0.99; }
+  touch-action: none;
+  z-index: 1090;
+  opacity: 1;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  mix-blend-mode: exclusion; }
 
 .purple-mode {
   background-color: var(--bg-purple);
